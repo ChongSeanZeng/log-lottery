@@ -14,7 +14,7 @@
         "preview": "vite preview",
         "lint": "eslint ./src",
         "lint:fix": "eslint ./src --fix",
-        "predeploy": "pnpm build",   // 或 `npm run build`
+        "predeploy": "pnpm build",   
         "deploy": "gh-pages -d dist"
     },
     "homepage": "https://ChongSeanZeng.github.io/log-lottery",
