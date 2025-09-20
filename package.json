@@ -13,8 +13,11 @@
         "test:ui": "vitest --ui",
         "preview": "vite preview",
         "lint": "eslint ./src",
-        "lint:fix": "eslint ./src --fix"
+        "lint:fix": "eslint ./src --fix",
+        "predeploy": "pnpm build",   // 或 `npm run build`
+        "deploy": "gh-pages -d dist"
     },
+    "homepage": "https://ChongSeanZeng.github.io/log-lottery",
     "dependencies": {
         "@tweenjs/tween.js": "^23.1.2",
         "@vueuse/core": "^11.3.0",
@@ -81,6 +84,7 @@
         "vite-plugin-svg-icons": "^2.0.1",
         "vite-plugin-vue-devtools": "^7.6.4",
         "vitest": "^2.1.5",
-        "vue-tsc": "^2.1.10"
+        "vue-tsc": "^2.1.10",
+        "gh-pages": "^X.Y.Z"
     }
 }
