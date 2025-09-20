@@ -19,6 +19,8 @@ const require = createRequire(import.meta.url)
 const process = require('node:process')
 
 export default defineConfig(({ mode }) => {
+  plugins: [vue()],
+  base: '/log-lottery/',
   const env = loadEnv(mode, __dirname)
   const chunkName = mode === 'prebuild' ? '[name]' : 'chunk'
 
